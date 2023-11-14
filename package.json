@@ -9,10 +9,11 @@
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore commitlint.config.js",
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
@@ -24,6 +25,7 @@
     "@tsconfig/node18": "^18.2.2",
     "@types/jsdom": "^21.1.3",
     "@types/node": "^18.18.5",
+    "@types/nprogress": "^0.2.3",
     "@vitejs/plugin-vue": "^4.4.0",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "@vue/eslint-config-prettier": "^8.0.0",
